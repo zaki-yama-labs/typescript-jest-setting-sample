@@ -1,4 +1,4 @@
-import { merge } from './main';
+import { merge, add100 } from './main';
 
 describe('merge', () => {
   it('should merge 2 objects', () => {
@@ -7,5 +7,11 @@ describe('merge', () => {
 
     const expected = { a: 100, b: 100 };
     expect(merge(a, b)).toEqual(expected);
+  });
+});
+
+describe('add100', () => {
+  it('should be 1 + 100 = 101', () => {
+    expect(add100(1)).toEqual(101);
   });
 });
